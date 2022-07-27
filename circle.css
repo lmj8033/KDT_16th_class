@@ -1,0 +1,62 @@
+/* RESET */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* COMMON */
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+section {
+    width: 1000px;
+    height: 600px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid black;
+}
+
+body .circle {
+    position: absolute;
+    background-color: orange;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    animation: circle linear 5s infinite;
+    left: 0%;
+    top: 0%;
+}
+
+@keyframes circle {
+
+    0% {
+        left: 0%;
+        top: 0%;
+    }
+
+    25% {
+        left: 85%;
+        top: 0%;
+    }
+
+    50% {
+        left: 85%;
+        top: 74%;
+    }
+
+    75% {
+        left: 0%;
+        top: 74%;
+    }
+
+    100% {
+        left: 0%;
+        top: 0%;
+    }
+}
